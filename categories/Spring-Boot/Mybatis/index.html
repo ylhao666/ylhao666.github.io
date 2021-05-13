@@ -5,9 +5,7 @@
   <!-- SEO相关 -->
   
     
-      
-        <meta name="robots" content="index,follow">
-      
+      <meta name="robots" content="noindex,follow">
     
   
   <!-- 渲染优化 -->
@@ -26,13 +24,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>Ylhaaao的博客</title>
-  
-    <meta name="keywords" content="Java,Spring Boot,Mysql,算法">
+  <title>分类：Mybatis - Ylhaaao的博客</title>
   
 
-  
-    <meta name="description" content="走过路过千万不要错误">
   
 
   <!-- feed -->
@@ -110,7 +104,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header always shadow blur "  >
+<header id="l_header" class="l_header always shadow blur show"  >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -329,7 +323,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  dock' style="display: ;">
+        <div id="full" class='cover-wrapper  dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://raw.githubusercontent.com/ylhao666/Pic/main/img/v2-cfc94e2bd7fecc7eb5e372b62a0c87cc_r.jpg"></div>
           
@@ -350,7 +344,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </div>
 </div>
 
-          <div id="scroll-down" style="display: ;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+          <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
         </div>
     
   
@@ -360,24 +354,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper" id="pjax-container">
           
 
+
 <div class='l_main'>
   
+    
+      
   <section class="post-list">
     
       
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-          
         
           
         
@@ -435,50 +419,6 @@ Mybatis 2.1.4
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/07/28/Mybatis-Study-Note-I/">
-        Mybatis学习笔记（I）
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        MyBatis Study1.安装1.1.通过Maven引入依赖Mysql驱动
-123456&lt;!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java --&gt;&lt;dependency&gt;    &lt;groupId&gt;mysql&lt;/groupId&gt;    &lt;artifactI...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-07-28</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2020/07/28/Mybatis-Study-Note-I/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
@@ -486,6 +426,8 @@ Mybatis 2.1.4
   
 
 
+    
+  
 </div>
 <aside class='l_side'>
   
@@ -627,7 +569,6 @@ Mybatis 2.1.4
 </aside>
 
 
-
 		  
 		  <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
@@ -641,14 +582,14 @@ Mybatis 2.1.4
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="full";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>
